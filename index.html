@@ -52,38 +52,50 @@
     <h1 class="p-2">Formulario de petición de asilo</h1>
     <p class="px-3">Si usted necesita asilo durante un día (o varios) rellene el siguiente formulario para solicitarlo:</p>
 
-    <form class="px-3 pb-3" method="POST" action="https://formspree.io/f/xlderqkz">
+    <form class="px-3 pb-3 needs-validation" method="POST" action="https://formspree.io/f/xlderqkz"  novalidate>
         <div class="row mb-3">
             <label for="nombre" class="col-sm-2 col-form-label required">Nombre</label>
             <div class="col-sm-10">
               <input name="Nombre" type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">
+                El nombre es obligatorio
+             </div>
             </div>
           </div>
         <div class="row mb-3">
             <label for="apellidos" class="col-sm-2 col-form-label required">Apellidos</label>
             <div class="col-sm-10">
               <input type="text" name="Apellidos" class="form-control" id="apellidos" required>
+              <div class="invalid-feedback">
+                El apellido es obligatorio
+             </div>
             </div>
           </div>
 
         <div class="row mb-3">
           <label for="llegada" class="col-sm-2 col-form-label required">Día de llegada</label>
           <div class="col-sm-10">
-            <input type="date" name="Día-de-llegada" class="form-control" id="llegada">
+            <input type="date" name="Día-de-llegada" class="form-control" id="llegada" required>
+            <div class="invalid-feedback">
+              El día de llegada es obligatorio
+           </div>
           </div>
         </div>
         <div class="row mb-3">
           <label for="salida" class="col-sm-2 col-form-label required">Día de salida</label>
           <div class="col-sm-10">
-            <input type="date" name="Día-de-Salida" class="form-control" id="salida">
+            <input type="date" name="Día-de-Salida" class="form-control" id="salida" required>
+            <div class="invalid-feedback">
+              El día de llegada es obligatorio
+           </div>
           </div>
         </div>
         <fieldset class="row mb-3">
           <legend class="col-form-label col-sm-2 pt-0">Número de huéspedes</legend>
           <div class="col-sm-10">
             <label class="visually-hidden" for="autoSizingSelect">Huéspedes</label>
-            <select name="Número-de-huéspedes" class="form-select" id="autoSizingSelect">
-                <option selected>Elige huéspedes</option>
+            <select name="Número-de-huéspedes" class="form-select" id="autoSizingSelect" required>
+                <option value="" >Elige número de huéspedes</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -99,6 +111,9 @@
               <label class="fs-6 form-check-label" for="gridCheck1">
                 Estoy de acuerdo con las normas y bases legales de esta estancia
               </label>
+              <div class="invalid-feedback">
+                Debes aceptar los términos
+             </div>
             </div>
           </div>
         </div>
@@ -126,6 +141,8 @@
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js" ></script>
+    <script src = "./js/validacion.js"></script>
+    </script>
   
   </body>
 
