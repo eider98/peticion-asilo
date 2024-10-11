@@ -52,37 +52,37 @@
     <h1 class="p-2">Petición de asilo</h1>
     <p class="px-3">Rellene el formulario para recibir asilo:</p>
 
-    <form class="px-3">
+    <form class="px-3" action="https://formspree.io/f/xlderqkz">
         <div class="row mb-3">
             <label for="nombre" class="col-sm-2 col-form-label required">Nombre</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombre" required>
+              <input name="Nombre" type="text" class="form-control" id="nombre" required>
             </div>
           </div>
         <div class="row mb-3">
             <label for="apellidos" class="col-sm-2 col-form-label required">Apellidos</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="apellidos" required>
+              <input type="text" name="Apellidos" class="form-control" id="apellidos" required>
             </div>
           </div>
 
         <div class="row mb-3">
           <label for="llegada" class="col-sm-2 col-form-label required">Día de llegada</label>
           <div class="col-sm-10">
-            <input type="date" class="form-control" id="llegada">
+            <input type="date" name="Día-de-llegada" class="form-control" id="llegada">
           </div>
         </div>
         <div class="row mb-3">
           <label for="salida" class="col-sm-2 col-form-label required">Día de salida</label>
           <div class="col-sm-10">
-            <input type="date" class="form-control" id="salida">
+            <input type="date" name="Día-de-Salida" class="form-control" id="salida">
           </div>
         </div>
         <fieldset class="row mb-3">
           <legend class="col-form-label col-sm-2 pt-0">Número de huéspedes</legend>
           <div class="col-sm-10">
             <label class="visually-hidden" for="autoSizingSelect">Huéspedes</label>
-            <select class="form-select" id="autoSizingSelect">
+            <select name="Número-de-huéspedes" class="form-select" id="autoSizingSelect">
                 <option selected>Elige huéspedes</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
