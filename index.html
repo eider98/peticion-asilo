@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petición de asilo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-icons.min.css">
+    <link rel="icon" href="house-heart.svg">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Petición de asilo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <W><a class="nav-link active" aria-current="page" href="#">Formulario</a></W>
+                    </li>
+                    <li class="nav-item">
+                        <W><a class="nav-link active" aria-current="page" href="#">Quienes somos</a></W>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fun
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Memes</a></li>
+                            <li><a class="dropdown-item" href="#">Musica</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Etorkizunean</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 class="p-2">Petición de asilo</h1>
+    <p class="px-3">Rellene el formulario para recibir asilo:</p>
+
+    <form class="px-3">
+        <div class="row mb-3">
+            <label for="nombre" class="col-sm-2 col-form-label required">Nombre</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+          </div>
+        <div class="row mb-3">
+            <label for="apellidos" class="col-sm-2 col-form-label required">Apellidos</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="apellidos" required>
+            </div>
+          </div>
+
+        <div class="row mb-3">
+          <label for="llegada" class="col-sm-2 col-form-label required">Día de llegada</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="llegada">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="salida" class="col-sm-2 col-form-label required">Día de salida</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="salida">
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Número de huéspedes</legend>
+          <div class="col-sm-10">
+            <label class="visually-hidden" for="autoSizingSelect">Huéspedes</label>
+            <select class="form-select" id="autoSizingSelect">
+                <option selected>Elige huéspedes</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+ 
+          </div>
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" required>
+              <label class="form-check-label" for="gridCheck1">
+                Estoy de acuerdo con las normas y bases legales de esta estancia
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+
+
+</html>
