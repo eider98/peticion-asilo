@@ -6,6 +6,7 @@
     <title>Petición de asilo</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" >
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="icon" href="house-heart.svg">
   </head>
 
@@ -51,153 +52,195 @@
     </nav>
 
 
-    <div class="container text-center">
-    <div class="row">
-        
+    <main class="container text-center">
+      <div class="row d-flex">
+          
             <h1 class="p-2 col-12"> ¿Quienes somos? </h1>
-              <div class="row">
-                <p class="px-3 pt-lg-4 mt-lg-3 col-12 col-lg-4 " style="text-align: justify">Somos Asier y Eider. A pesar de que estamos un poco locos y tengamos nuestras cosas somos gente maja y divertida. </p>
+              <div class="row ">
+
+                <p class="px-3 pt-lg-4 mt-lg-3 col-12 col-lg-4 d-flex align-items-center" style="text-align: justify">Somos Asier y Eider. A pesar de que estamos un poco locos y tengamos nuestras cosas somos gente maja y divertida. </p>
                 <img src="./img/asier-eider.jpg" alt="" class="image-fluid col-lg-8">
               </div>
             
-            <h2 class="p-2 col-12">¿Dónde te hospedarás?</h2>
-        
-            <div class="col-md-6">
-                <h3 class="px-3">Ubicación</h3>
-        
-                <p class="px-3" style="text-align: justify">A 5 minutos del metro y a la horilla de la parada de autobús. Te hospedarás en un barrio residencial tranquilo y acogedor, con todos los servicios necesarios.</p>
-        
-                <div class="ratio ratio-4x3 mb-3 px-2" >
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5581.7366742450995!2d-2.9719055546082003!3d43.286656134487124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e50774e8ca143%3A0x88bb341c60a9b44d!2sElorrieta%2C%2048015%20Bilbao%2C%20Vizcaya!5e1!3m2!1ses!2ses!4v1728720193686!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        
-            <div class="col-md-6">
-
-                <h3 class="px-3 py-2">Estancias</h3>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                  <div class="col">
-                    <div class="card">
-                      <img src="./img/salon-comedor.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Salón comedor</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
+              <h2 id="titulo" class="pt-4 pb-2 col-12">¿Dónde te hospedarás?</h2>
+              <section id="donde-info">
+              
+              <div id="ubicacion">
+                  <h3 class="px-3 mt-3">Ubicación</h3>
+                  <p class="px-3" style="text-align: justify">A 5 minutos del metro y a la horilla de la parada de autobús. Te hospedarás en un barrio residencial tranquilo y acogedor, con todos los servicios necesarios.</p>
+                  <div class="ratio ratio-4x3 mb-3 px-2" >
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5581.7366742450995!2d-2.9719055546082003!3d43.286656134487124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e50774e8ca143%3A0x88bb341c60a9b44d!2sElorrieta%2C%2048015%20Bilbao%2C%20Vizcaya!5e1!3m2!1ses!2ses!4v1728720193686!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="./img/cocina.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Cocina</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="./img/baño.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Baño privado</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="./img/habitación-privada.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Habitación privada</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-               
-              <div class="col-lg-6">
-                <h3 class="px-3  py-1 mt-4">Actividades</h3>
-                <div id="carouselExampleCaptions" class="carousel slide px-2">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./img/ver-peliculas.jpg" class="d-block w-100 rounded" alt="...">
-                        <div class="carousel-caption  d-block">
-                          <h5 >Ver pelis y series</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/pc-gaming.jpg" class="d-block w-100 rounded" alt="...">
-                        <div class="carousel-caption  d-block">
-                          <h5>Jugar al lol</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/regar plantas.jpg" class="d-block w-100 rounded" alt="...">
-                        <div class="carousel-caption d-block">
-                          <h5>Regar plantitas</h5>
-                        </div>
-                      </div>
-        
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-        
-                  <h3 class="px-3 py-1 mt-4">Flora y fauna</h3>
 
-                  <div id="carouselExampleCaptions2" class="carousel slide px-2 pb-lg-2">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./img/carcoma.jpg" class="d-block w-100 rounded" alt="...">
-                        <div class="carousel-caption  d-block">
-                          <h5 >Carcoma</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/chinche.jpg" class="d-block w-100 rounded" alt="...">
-                        <div class="carousel-caption  d-block">
-                          <h5>Chinches</h5>
+              <div id="estancias" >
+                  <h3 class="px-3 py-2 mt-4">Estancias</h3>
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/salon-comedor.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Salón comedor</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/cocina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Cocina</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/baño.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Baño privado</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="./img/habitación-privada.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Habitación privada</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col-lg-6">
-                  <h3 class="px-3 mt-4 py-1">Normas de la casa</h3>
+              
+                <div id="actividades" >
+                  <h3 class="px-3  py-1 mt-5 mt-md-0 py-md-0">Actividades</h3>
+                  <p>Podrás realizar un montón de actividades:</p>
+                  <div id="carouselExampleCaptions" class="carousel slide px-2">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./img/ver-peliculas.jpg" class="d-block w-100 rounded" alt="...">
+                          <div class="carousel-caption  d-block">
+                            <h5 >Ver pelis y series</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/pc-gaming.jpg" class="d-block w-100 rounded" alt="...">
+                          <div class="carousel-caption  d-block">
+                            <h5>Jugar al lol</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/regar plantas.jpg" class="d-block w-100 rounded" alt="...">
+                          <div class="carousel-caption d-block">
+                            <h5>Regar plantitas</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+              
+                  <div  id="flora-fauna">
+                    <h3 class="px-3 py-1 py-md-0 mt-5 mt-md-0">Flora y fauna</h3>
+                    <p>Nunca esterás solx! Conoce aquí a tus variopintos compañeros: </p>
+                    <div id="carouselExampleCaptions2" class="carousel slide px-2 pb-lg-2">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./img/carcoma.jpg" class="d-block w-100 rounded" alt="...">
+                          <div class="carousel-caption  d-block">
+                            <h5 >Carcoma</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/chinche.jpg" class="d-block w-100 rounded" alt="...">
+                          <div class="carousel-caption  d-block">
+                            <h5>Chinches</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="normas" >
+                    <h3 class="px-3 mt-5 mt-lg-0 pt-lg-0 py-1">Normas de la casa</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 g-4 ">
+                      <div class="col d-flex justify-content-center">
+                        <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                          <div class="card-header">Norma 1</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Pasarlo bien</h5>
+                            <p class="card-text">Divertirse y pasarlo bien es lo que se busca en esta casa.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      <div class="col d-flex justify-content-center">
+                        <div class="card  mb-3" style="max-width: 18rem;" >
+                          <div class="card-header">Norma 2</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Respeto</h5>
+                            <p class="card-text"> El respeto hacia los demás inquilinos es primordial. Se deben cumplir los horarios de sueño y descanso.</p>
+                          </div>
+                        </div>
+                      </div>
+              
+                      <div class="col d-flex justify-content-center">
+                        <div class="card text-bg-warning mb-3 " style="max-width: 18rem;" >
+                          <div class="card-header">Aviso</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Mal olor</h5>
+                            <p class="card-text">Si se percive un  olor raro por la noche se debe una de las fabricas de en frente aprobecha para quemar todo tipo de residuos.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex justify-content-center">
+                        <div class="card text-bg-danger mb-3" style="max-width: 18rem;" >
+                          <div class="card-header">Peligro</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Cuidado con el huevo </h5>
+                            <p class="card-text text-">Servir el huevo crudo o poco hecho en nuestra presencia queda terminantemente prohibido. Si quieres hacer ese tipo de asquerosisdades te invitamos a que eligas otro lugar para alojarte.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
                 </div>
+            </section>
         
         
         
-    </div>    
+    </main>    
     </div>
     
 
-    <footer class=" bg-primary bg-opacity-50  pt-3 d-flex flex-column align-content-center">
+    <footer id="footer" class=" bg-primary bg-opacity-50  pt-3 d-flex flex-column align-content-center">
         <p class="text-center pt-1">&copy;2024 Eider Aranzabal</p>
 
         <ul id="redes-sociales" class="d-flex justify-content-center list-unstyled">
