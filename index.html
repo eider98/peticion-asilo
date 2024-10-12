@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Petición de asilo</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" >
-    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <w>
+      <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    </w>
     <link rel="icon" href="house-heart.svg">
   </head>
 
@@ -51,8 +53,9 @@
     <div class="container">
       <div class="row align-items-start">
         <h1 class="p-3 col-12">Formulario de petición de asilo</h1>
-        <div class="col-md-8">
-          <p class="px-3 ">Si usted necesita asilo durante un día (o varios) rellene el siguiente formulario para solicitarlo:</p>
+
+        <div class="col-md-7 col-lg-6">
+          <p class="px-2 px-md-3 " style="text-align: justify">Si usted necesita asilo durante uno o varios días rellene el siguiente formulario para realizar una solicitud formal:</p>
     
           <form class="px-3 pb-3 needs-validation " method="POST" action="https://formspree.io/f/xlderqkz"  novalidate>
               <div class="row mb-3">
@@ -124,31 +127,58 @@
             </form>
           </div>
 
-          <div class="col-md-4 ">
+          <div class="col-md-5 col-lg-6">
+            <h3 class="px-2 mt-sm-4 mt-md-0 fs-5 col-lg-6 ">Disponibilidad</h3>
             
-            <h3 class="px-2 mt-sm-4 mt-md-0 fs-5 ">Disponibilidad</h3>
-            <ul class="list-group">
-              <li class="list-group-item">Cama 135 (colchón vegano gourmet): máximo 2 personas</li>
-              <li class="list-group-item">Dos sofás cómodos: máximo 2 personas</li>
-            </ul>
-      
-            <h3 class="px-2 mt-4 fs-5">Ubicación</h3>
-            <div class="ratio ratio-4x3 mb-3" >´
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5581.7366742450995!2d-2.9719055546082003!3d43.286656134487124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e50774e8ca143%3A0x88bb341c60a9b44d!2sElorrieta%2C%2048015%20Bilbao%2C%20Vizcaya!5e1!3m2!1ses!2ses!4v1728720193686!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="./img/cama.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Cama</h5>
+                    <p class="card-text">Cama 135 (colchón vegano gourmet): máximo 2 personas
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="./img/sofa.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Sofá</h5>
+                    <p class="card-text">Dos sofás (muy cómodos): máximo 2 personas
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      
+            <div class="col-md-12 align-self-end">
+              <h3 class="px-2 mt-4 fs-5 ">Ubicación</h3>
+              <div class="ratio ratio-4x3 mb-3" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5581.7366742450995!2d-2.9719055546082003!3d43.286656134487124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e50774e8ca143%3A0x88bb341c60a9b44d!2sElorrieta%2C%2048015%20Bilbao%2C%20Vizcaya!5e1!3m2!1ses!2ses!4v1728720193686!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            
           </div>
           </div>
-        </div>
 
-      <footer class="text-light bg-primary bg-opacity-50 p-2 d-flex flex-column align-content-center">
-        <p class="text-center">&copy;2024 Eider Aranzabal</p>
+      <footer class=" bg-primary bg-opacity-50  pt-3 d-flex flex-column align-content-center">
+        <p class="text-center pt-1">&copy;2024 Eider Aranzabal</p>
 
         <ul id="redes-sociales" class="d-flex justify-content-center list-unstyled">
-            <li><a class="px-1 text-light" href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a class="px-1 text-light" href="#"><i class="bi bi-twitter-x"></i></a></li>
-            <li><a class="px-1 text-light" href="#"><i class="bi bi-tiktok"></i></a></li>
-            <li><a class="px-1 text-light" href="#"><i class="bi bi-instagram"></i></a></li>
-            <li><a class="px-1 text-light" href="#"><i class="bi bi-youtube"></i></a></li>
+            <li><a class="px-2 text-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a class="px-2 text-dark" href="#"><i class="bi bi-twitter-x"></i></a></li>
+            <li><a class="px-2 text-dark" href="#"><i class="bi bi-tiktok"></i></a></li>
+            <li><a class="px-2 text-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a class="px-2 text-dark" href="#"><i class="bi bi-youtube"></i></a></li>
         </ul>
 
         <div id="arriba" class="position-fixed bottom-0 end-0 m-4 z-3 d-md-none">
