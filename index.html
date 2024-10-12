@@ -48,90 +48,97 @@
         </div>
     </nav>
 
-
-    <h1 class="p-2">Formulario de petición de asilo</h1>
-    <p class="px-3">Si usted necesita asilo durante un día (o varios) rellene el siguiente formulario para solicitarlo:</p>
-
-    <form class="px-3 pb-3 needs-validation" method="POST" action="https://formspree.io/f/xlderqkz"  novalidate>
-        <div class="row mb-3">
-            <label for="nombre" class="col-sm-2 col-form-label required">Nombre</label>
-            <div class="col-sm-10">
-              <input name="Nombre" type="text" minlength="3" class="form-control" id="nombre" required>
-              <div class="invalid-feedback">
-                El nombre es obligatorio
-             </div>
-            </div>
-          </div>
-        <div class="row mb-3">
-            <label for="apellidos" class="col-sm-2 col-form-label required">Apellidos</label>
-            <div class="col-sm-10">
-              <input type="text" name="Apellidos" minlength="3" class="form-control" id="apellidos" required>
-              <div class="invalid-feedback">
-                El apellido es obligatorio
-             </div>
-            </div>
-          </div>
-
-        <div class="row mb-3">
-          <label for="llegada" class="col-sm-2 col-form-label required">Día de llegada</label>
-          <div class="col-sm-10">
-            <input type="date" name="Día-de-llegada" class="form-control" id="llegada" required>
-            <div class="invalid-feedback">
-              El día de llegada es obligatorio
-           </div>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="salida" class="col-sm-2 col-form-label required">Día de salida</label>
-          <div class="col-sm-10">
-            <input type="date" name="Día-de-Salida" class="form-control" id="salida" required>
-            <div class="invalid-feedback">
-              El día de llegada es obligatorio
-           </div>
-          </div>
-        </div>
-        <fieldset class="row mb-3">
-          <legend class="col-form-label col-sm-2 pt-0">Número de huéspedes</legend>
-          <div class="col-sm-10">
-            <label class="visually-hidden" for="autoSizingSelect">Huéspedes</label>
-            <select name="Número-de-huéspedes" class="form-select" id="autoSizingSelect" required>
-                <option value="" >Elige número de huéspedes</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
- 
-          </div>
-        </fieldset>
-        <div class="row mb-3">
-          <div class="col-sm-10 offset-sm-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1" required>
-              <label class="fs-6 form-check-label" for="gridCheck1">
-                Estoy de acuerdo con las normas y bases legales de esta estancia
-              </label>
-              <div class="invalid-feedback">
-                Debes aceptar los términos
-             </div>
-            </div>
-          </div>
-        </div>
-        <input type="hidden" name="_next" value="https://eider98.github.io/Proyectos/">
-        <button type="submit" class="btn btn-secondary opacity-30" value="enviar">Enviar</button>
-      </form>
+    <div class="container">
+      <div class="row">
+        <h1 class="p-3 col-12">Formulario de petición de asilo</h1>
+        <div class="col-md-8">
+          <p class="px-3 ">Si usted necesita asilo durante un día (o varios) rellene el siguiente formulario para solicitarlo:</p>
     
-      <h3 class="px-2 mt-4 fs-5">Disponibilidad</h3>
-      <ul class="list-group">
-        <li class="list-group-item">Cama 135 (colchón vegano gourmet): máximo 2 personas</li>
-        <li class="list-group-item">Dos sofás cómodos: máximo 2 personas</li>
-      </ul>
+          <form class="px-3 pb-3 needs-validation " method="POST" action="https://formspree.io/f/xlderqkz"  novalidate>
+              <div class="row mb-3">
+                  <label for="nombre" class="col-sm-2 col-form-label required">Nombre</label>
+                  <div class="col-sm-10">
+                    <input name="Nombre" type="text" minlength="3" class="form-control" id="nombre" required>
+                    <div class="invalid-feedback">
+                      El nombre es obligatorio
+                  </div>
+                  </div>
+                </div>
+              <div class="row mb-3">
+                  <label for="apellidos" class="col-sm-2 col-form-label required">Apellidos</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="Apellidos" minlength="3" class="form-control" id="apellidos" required>
+                    <div class="invalid-feedback">
+                      El apellido es obligatorio
+                  </div>
+                  </div>
+                </div>
+      
+              <div class="row mb-3">
+                <label for="llegada" class="col-sm-2 col-form-label required">Día de llegada</label>
+                <div class="col-sm-10">
+                  <input type="date" name="Día-de-llegada" class="form-control" id="llegada" required>
+                  <div class="invalid-feedback">
+                    El día de llegada es obligatorio
+                </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="salida" class="col-sm-2 col-form-label required">Día de salida</label>
+                <div class="col-sm-10">
+                  <input type="date" name="Día-de-Salida" class="form-control" id="salida" required>
+                  <div class="invalid-feedback">
+                    El día de llegada es obligatorio
+                </div>
+                </div>
+              </div>
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Número de huéspedes</legend>
+                <div class="col-sm-10">
+                  <label class="visually-hidden" for="autoSizingSelect">Huéspedes</label>
+                  <select name="Número-de-huéspedes" class="form-select" id="autoSizingSelect" required>
+                      <option value="" >Elige número de huéspedes</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                  </select>
+      
+                </div>
+              </fieldset>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" required>
+                    <label class="fs-6 form-check-label" for="gridCheck1">
+                      Estoy de acuerdo con las normas y bases legales de esta estancia
+                    </label>
+                    <div class="invalid-feedback">
+                      Debes aceptar los términos
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" name="_next" value="https://eider98.github.io/Proyectos/">
+              <button type="submit" class="btn btn-secondary opacity-30" value="enviar">Enviar</button>
+            </form>
+          </div>
 
-      <h3 class="px-2 mt-4 fs-5">Ubicación</h3>
-      <div class="ratio ratio-4x3 mb-2" >
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.4388652540174!2d-2.968366623309988!3d43.28413027112201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e5070f730b321%3A0x96e61627610d051f!2sElorrieta%20Plaza%2C%2015%2C%203b%2C%20Deusto%2C%2048015%20Bilbo%2C%20Bizkaia!5e0!3m2!1ses!2ses!4v1728652777587!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
+          <div class="col-4">
+            
+            <h3 class="px-2 mt-4 fs-5 ">Disponibilidad</h3>
+            <ul class="list-group">
+              <li class="list-group-item">Cama 135 (colchón vegano gourmet): máximo 2 personas</li>
+              <li class="list-group-item">Dos sofás cómodos: máximo 2 personas</li>
+            </ul>
+      
+            <h3 class="px-2 mt-4 fs-5">Ubicación</h3>
+            <div class="ratio ratio-4x3 mb-3" >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.4388652540174!2d-2.968366623309988!3d43.28413027112201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e5070f730b321%3A0x96e61627610d051f!2sElorrieta%20Plaza%2C%2015%2C%203b%2C%20Deusto%2C%2048015%20Bilbo%2C%20Bizkaia!5e0!3m2!1ses!2ses!4v1728652777587!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          </div>
+        </div>
 
       <footer class="text-light bg-primary bg-opacity-50 p-2 d-flex flex-column align-content-center">
         <p class="text-center">&copy;2024 Eider Aranzabal</p>
